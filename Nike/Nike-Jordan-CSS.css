@@ -1,0 +1,322 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    position: relative;
+    overflow-x: hidden;
+}
+
+
+.background
+{ 
+    z-index: -5;
+    position: absolute;
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:rgba(215, 81, 37, 1);
+    background: radial-gradient(circle,  rgba(255, 140, 85,1) 0%,rgba(215, 81, 37, 1)  60%);
+    transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+}
+
+.background-red
+{
+    z-index: -5;
+    position: absolute;
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:rgba(207, 19, 47, 1);
+    /* background: radial-gradient(circle, rgba(208, 86, 97, 1) 0% , rgba(207, 19, 47, 1)  60%); */
+}
+
+.background-berz
+{
+    z-index: -5;
+    position: absolute;
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:rgba(195, 162, 154, 1);
+    /* background: radial-gradient(circle,  rgba(231, 204, 163, 1) 0%, rgba(195, 162, 154, 1) 60%); */
+}
+
+.background-blue
+{
+    z-index: -5;
+    position: absolute;
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:rgba(33, 58, 127, 1);
+    /* background: radial-gradient(circle,  rgba(73, 98, 167,1) 0%,rgba(33, 58, 127, 1)  60%); */
+}
+
+.background-orange
+{
+    z-index: -5;
+    position: absolute;
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:rgba(215, 81, 37, 1);
+    /* background: radial-gradient(circle,  rgba(255, 140, 85,1) 0%,rgba(215, 81, 37, 1)  60%); */
+}
+
+.background-logo {
+    margin: 0;
+    font-family: 'Jost', sans-serif;
+    font-size: 260px;
+    font-weight: 900;
+    letter-spacing: -20px;
+    transform: scaleX(150%) scaleY(300%);
+    color: white;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0px;
+    padding-top: 40px;
+
+}
+
+header img
+{
+    width: 170px;
+    margin-left: 40px;
+    
+}
+
+header .menu
+{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    font-family: 'Jost', sans-serif;
+}
+header .menu p
+{
+    display: inline-block;
+    color: white;
+    transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+header .menu p:hover
+{
+    transform: scale(120%);
+}
+
+header .icons
+{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 40px;
+}
+
+header .icons i
+{
+    color: white;
+    margin-right: 25px;
+    font-size: 27px;
+}
+
+.info
+{
+  font-family: 'Jost', sans-serif;
+  z-index: 5;
+  color: white;
+  margin-top: 510px;
+  margin-left: 40px;
+}
+
+.info h1
+{
+    font-weight: lighter;
+    font-size: 50px;
+}
+
+.info h2
+{
+    font-weight: bolder;
+    font-size: 25px;
+    margin-bottom: 10px;
+    margin-top: 40px;
+}
+
+.info h4
+{
+    font-weight: lighter;
+    font-size: 15px;
+    margin: 0;
+}
+
+.select
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Jost', sans-serif;
+    margin-top: 70px;
+}
+
+.select-left
+{
+    margin-left: 40px;
+    font-family: 'Jost', sans-serif;
+}
+
+.select-left h2
+{
+    color: white;
+    font-size: 27px;
+}
+
+.select-right
+{
+    margin-right: 40px;
+    font-family: 'Jost', sans-serif;
+}
+
+.select-right h6
+{
+    color: white;
+    font-weight: 100;
+    font-size: 15px;
+    margin-top: 31px;
+    margin-bottom: 70px;
+}
+
+.select-right i
+{
+    font-size: 20px;
+}
+
+.switch
+{
+    width: 100px;
+    height: 100px;
+    border-radius: 360px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.sizes
+{
+    display:grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 7px;
+}
+
+.size
+{
+    width: 70px;
+    height: 70px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: lighter;
+    cursor: pointer;
+}
+
+
+.colors
+{
+    position: relative;
+}
+
+.color
+{
+    width: 75px;
+    height: 75px;
+    border-radius: 360px;
+    border: 2px solid transparent;
+    margin: 0px 5px;
+    box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 1);
+    transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+}
+
+.color-red
+{
+    background-color:rgba(207, 19, 47, 1);
+}
+.color-orange
+{
+    background-color: rgba(215, 81, 37, 1);
+}
+.color-berz
+{
+    background-color: #e7cca3;
+}
+.color-blue
+{
+    background-color: rgba(33, 58, 127, 1);
+}
+
+.color-empty
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-132%, -50%) ;
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+
+
+.boot
+{
+    transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+}
+
+.boot-current
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) ;
+    width: 1100px;
+}
+
+.boot-left
+{
+    position: absolute;
+    top: 50%;
+    left: -25%;
+    transform: translate(-50%, -50%) ;
+    width: 1100px;
+}
+
+.boot-right
+{
+    position: absolute;
+    top: 50%;
+    left: 125%;
+    transform: translate(-50%, -50%) ;
+    width: 1100px;
+}
