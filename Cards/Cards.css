@@ -1,0 +1,389 @@
+@font-face {
+  font-family: 'MojaCzcionka';
+  src: url('barselona.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html
+{
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+}
+ 
+body
+{
+    margin: 0px;
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container
+{
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
+    border: 5px solid white;
+    width: 475px;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: ease-in-out 200ms;
+}
+
+
+.main-card
+{
+    border: 5px solid #000000;
+    width: 425px;
+    height: 600px;
+    z-index: 10;
+    background: linear-gradient(to bottom, #0033A0, #A50044);
+    transition: ease-in-out 200ms;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-card img
+{
+    height: 70%;
+    width: 100%;
+}
+
+.main-card-inv img
+{
+    height: 70%;
+    width: 100%;
+}
+
+.theme-card {
+  position: absolute;
+  width: 425px;
+  height: 600px;
+  border: 5px solid black;
+  transition:300ms ease;
+  transform-style: preserve-3d;
+}
+
+.tcf, .tcb {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tcf {
+  transform: rotateY(0deg);
+  z-index: 2;
+}
+
+.tcb {
+  transform: rotateY(180deg);
+}
+
+.theme-card.flipped {
+  transform: rotateY(180deg);
+}
+
+.tc
+{
+    position: absolute;
+}
+
+.theme-card-clicked
+{
+    border: 5px solid black;
+    width: 425px;
+    height: 600px;
+}
+
+.card-container-hovered
+{
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+    width: 100%;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: ease-in-out 200ms;
+    perspective: 600px;
+}
+
+.main-card-inv
+{
+    border: 5px solid #000000;
+    width: 425px;
+    height: 600px;
+    z-index: 10;
+    background: linear-gradient(to bottom, #0033A0, #A50044);
+    transition: ease-in-out 200ms;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-card-dis
+{
+    display: none;
+}
+
+.tc-1
+{
+    background: linear-gradient(to right, #A50044 50%, #0033A0 50%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.tc-1 img
+{
+    height: 163%;
+    position: absolute;
+    left: -23px;
+    top: -330px;
+}
+
+.tc-2
+{
+    background: linear-gradient(to right, #A50044 50%, #0033A0 50%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.tc-2 img
+{
+    height: 124%;
+    position: absolute;
+    left: -68px;
+    top: -97px;
+}
+
+.tc-3
+{
+    background: linear-gradient(to right, #A50044 50%, #0033A0 50%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.tc-3 img
+{
+    height: 124%;
+    position: absolute;
+    left: 33px;
+    top: -71px;
+}
+
+
+.tc-4
+{
+    background: linear-gradient(to right, #A50044 50%, #0033A0 50%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.tc-5
+{
+    background: linear-gradient(to right, #A50044 50%, #0033A0 50%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.tc-5 img
+{
+    height: 124%;
+    position: absolute;
+    left: 45px;
+    top: -97px;
+}
+
+.tc-6 {
+    background: linear-gradient(to right, #A50044 50%, #0033A0 50%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.tc-6 img
+{
+    height: 124%;
+    position: absolute;
+    left: 8px;
+    top: -98px;
+}
+
+.tc-7 {
+    background: linear-gradient(to right, #A50044 50%, #0033A0 50%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.tc-7 img
+{
+    height: 124%;
+    position: absolute;
+    left: -20px;
+    top: -115px;
+}
+
+.player-number {
+  font-family: "MojaCzcionka", sans-serif;
+  font-size: 240px;
+  font-weight: bold;
+  color: #c39762;
+  -webkit-text-stroke: 0.1px black;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+  margin: 0;
+}
+
+.arr
+{
+    position: absolute;
+    height: 200px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arr i
+{
+    margin: 0;
+    padding: 0;
+    font-size: 45px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.arr-left-b
+{
+    left:50%;
+}
+
+.arr-right-b
+{
+    right: 50%;
+}
+
+.arr-left-a
+{
+    left:1%;
+}
+
+.arr-right-a
+{
+    right: 1%;
+}
+
+.front-face-card
+{
+    transition: ease-in-out 200ms;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.front-face-card-inv
+{
+    transition: ease-in-out 200ms;
+    display: none;
+}
+
+.back-face-card
+{
+    transition: ease-in-out 200ms;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+/* .tcb img
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) ;
+
+} */
+
+.back-face-card-inv
+{
+    transition: ease-in-out 200ms;
+    display: none;
+}
+
+.stats {
+    position: absolute;
+    width: 200px;
+    height: 80px;
+    right: 0; /* Instead of -5% */
+    background-color: #0a2a57; 
+    clip-path: polygon(30% 0%, 100% 0%, 100% 100%, 0% 100%);
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.st1
+{
+    right:-5%;
+    top:19%;
+}
+
+.st2
+{
+    right:-5%;
+    top:44%;
+}
+
+.st3
+{
+    right:-5%;
+    top:69%;
+}
+
+.stats div {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) translateX(55px);
+}
+
+
+.stats h1
+{
+
+    font-size: 25px;
+    margin: 0;
+    font-style: italic;
+}
+
+.stats h3
+{
+    font-size: 25px;
+    margin: 0;
+    font-style: italic;
+}
